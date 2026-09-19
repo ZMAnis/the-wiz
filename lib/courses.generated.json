@@ -1,0 +1,192 @@
+[
+  {
+    "id": "1-biostatistiques",
+    "year": 1,
+    "slug": "biostatistiques",
+    "title": "Biostatistiques",
+    "category": "Modules",
+    "pages": 40,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/1-biostatistiques.pdf"
+  },
+  {
+    "id": "1-cytologie",
+    "year": 1,
+    "slug": "cytologie",
+    "title": "Cytologie",
+    "category": "Modules",
+    "pages": 44,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/1-cytologie.pdf"
+  },
+  {
+    "id": "1-embryologie",
+    "year": 1,
+    "slug": "embryologie",
+    "title": "Embryologie",
+    "category": "Modules",
+    "pages": 38,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/1-embryologie.pdf"
+  },
+  {
+    "id": "1-histologie",
+    "year": 1,
+    "slug": "histologie",
+    "title": "Histologie",
+    "category": "Modules",
+    "pages": 34,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/1-histologie.pdf"
+  },
+  {
+    "id": "1-informatique",
+    "year": 1,
+    "slug": "informatique",
+    "title": "Informatique",
+    "category": "Modules",
+    "pages": 30,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/1-informatique.pdf"
+  },
+  {
+    "id": "1-physiologie",
+    "year": 1,
+    "slug": "physiologie",
+    "title": "Physiologie",
+    "category": "Modules",
+    "pages": 34,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/1-physiologie.pdf"
+  },
+  {
+    "id": "1-sante-societe-et-humanite",
+    "year": 1,
+    "slug": "sante-societe-et-humanite",
+    "title": "Santé, société et humanité",
+    "category": "Modules",
+    "pages": 44,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/1-sante-societe-et-humanite.pdf"
+  },
+  {
+    "id": "1-secourisme",
+    "year": 1,
+    "slug": "secourisme",
+    "title": "Secourisme",
+    "category": "Modules",
+    "pages": 28,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/1-secourisme.pdf"
+  },
+  {
+    "id": "2-appareil-urinaire",
+    "year": 2,
+    "slug": "appareil-urinaire",
+    "title": "Appareil urinaire",
+    "category": "Integrated units",
+    "pages": 52,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/2-appareil-urinaire.pdf"
+  },
+  {
+    "id": "2-genetique",
+    "year": 2,
+    "slug": "genetique",
+    "title": "Génétique",
+    "category": "Modules",
+    "pages": 60,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/2-genetique.pdf"
+  },
+  {
+    "id": "2-immunologie-1",
+    "year": 2,
+    "slug": "immunologie-1",
+    "title": "Immunologie (1)",
+    "category": "Modules",
+    "pages": 44,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/2-immunologie-1.pdf"
+  },
+  {
+    "id": "3-appareil-digestif-et-organes-hematopoietiques",
+    "year": 3,
+    "slug": "appareil-digestif-et-organes-hematopoietiques",
+    "title": "Appareil digestif et organes hématopoiétiques",
+    "category": "Integrated units",
+    "pages": 108,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/3-appareil-digestif-et-organes-hematopoietiques.pdf"
+  },
+  {
+    "id": "3-appareil-endocrinien-de-reproduction-et-urinaire",
+    "year": 3,
+    "slug": "appareil-endocrinien-de-reproduction-et-urinaire",
+    "title": "Appareil endocrinien, de reproduction et urinaire",
+    "category": "Integrated units",
+    "pages": 100,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/3-appareil-endocrinien-de-reproduction-et-urinaire.pdf"
+  },
+  {
+    "id": "3-appareil-neurologique-locomoteur-et-cutane",
+    "year": 3,
+    "slug": "appareil-neurologique-locomoteur-et-cutane",
+    "title": "Appareil neurologique-locomoteur et cutané",
+    "category": "Integrated units",
+    "pages": 86,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/3-appareil-neurologique-locomoteur-et-cutane.pdf"
+  },
+  {
+    "id": "3-anatomopathologie",
+    "year": 3,
+    "slug": "anatomopathologie",
+    "title": "Anatomopathologie",
+    "category": "Modules",
+    "pages": 62,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/3-anatomopathologie.pdf"
+  },
+  {
+    "id": "3-immunologie-2",
+    "year": 3,
+    "slug": "immunologie-2",
+    "title": "Immunologie (2)",
+    "category": "Modules",
+    "pages": 44,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/3-immunologie-2.pdf"
+  },
+  {
+    "id": "3-microbiologie",
+    "year": 3,
+    "slug": "microbiologie",
+    "title": "Microbiologie",
+    "category": "Modules",
+    "pages": 86,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/3-microbiologie.pdf"
+  },
+  {
+    "id": "3-pharmacologie",
+    "year": 3,
+    "slug": "pharmacologie",
+    "title": "Pharmacologie",
+    "category": "Modules",
+    "pages": 68,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/3-pharmacologie.pdf"
+  },
+  {
+    "id": "6-dermatologie",
+    "year": 6,
+    "slug": "dermatologie",
+    "title": "Dermatologie",
+    "category": "Modules",
+    "pages": 74,
+    "previewPages": 10,
+    "previewUrl": "/course-previews/6-dermatologie.pdf"
+  }
+]

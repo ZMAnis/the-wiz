@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Placeholder — dedicated blank note pages">
+  <defs>
+    <linearGradient id="fold3" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#0a0a0a" stop-opacity="0.09"/>
+      <stop offset="45%" stop-color="#0a0a0a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="1250" fill="#fbfbfb"/>
+  <rect width="1000" height="1250" fill="url(#fold3)"/>
+
+  <text x="90" y="120" font-family="Inter, Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5" fill="#0a0a0a" opacity="0.35">YOUR PAGES</text>
+  <text x="910" y="120" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif" font-size="19" letter-spacing="5" fill="#0a0a0a" opacity="0.35">NOTES</text>
+  <rect x="90" y="146" width="820" height="1" fill="#0a0a0a" opacity="0.14"/>
+
+  <text x="90" y="236" font-family="'Space Grotesk', Inter, sans-serif" font-size="58" font-weight="500" letter-spacing="-2" fill="#0a0a0a" opacity="0.22">Notes</text>
+
+  <!-- date / topic fields -->
+  <g stroke="#0a0a0a" stroke-opacity="0.18">
+    <path d="M90 300h360M540 300h370"/>
+  </g>
+  <g fill="#0a0a0a" opacity="0.28">
+    <text x="90" y="288" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4">TOPIC</text>
+    <text x="540" y="288" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" letter-spacing="4">DATE</text>
+  </g>
+
+  <!-- ruled field -->
+  <g stroke="#0a0a0a" stroke-opacity="0.11">
+    <path d="M90 380h820M90 434h820M90 488h820M90 542h820M90 596h820M90 650h820M90 704h820M90 758h820M90 812h820M90 866h820M90 920h820M90 974h820M90 1028h820M90 1082h820"/>
+  </g>
+
+  <!-- margin rule -->
+  <path d="M150 352v760" stroke="#0a0a0a" stroke-opacity="0.14"/>
+
+  <!-- a couple of faint personal marks -->
+  <g fill="#0a0a0a" opacity="0.16">
+    <rect x="176" y="418" width="260" height="7" rx="3.5"/>
+    <rect x="176" y="472" width="182" height="7" rx="3.5"/>
+    <circle cx="120" cy="527" r="4"/>
+    <rect x="176" y="526" width="304" height="7" rx="3.5"/>
+  </g>
+
+  <text x="90" y="1180" font-family="Inter, Helvetica, Arial, sans-serif" font-size="17" letter-spacing="4" fill="#0a0a0a" opacity="0.28">THE WIZ — BLANK</text>
+</svg>

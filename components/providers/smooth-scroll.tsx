@@ -1,0 +1,106 @@
+"use client";
+
+import Lenis from "lenis";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
+
+type ScrollLock = {
+  /** Freeze the page — used while a modal is open. */
+  lock: () => void;
+  unlock: () => void;
+};
+
+const ScrollLockContext = createContext<ScrollLock>({
+  lock: () => {},
+  unlock: () => {},
+});
+
+export const useScrollLock = () => useContext(ScrollLockContext);
+
+/**
+ * Inertial scrolling for the whole document.
+ * Skipped entirely when the user prefers reduced motion.
+ */
+export function SmoothScroll({ children }: { children: React.ReactNode }) {
+  const lenisRef = useRef<Lenis | null>(null);
+  const [, setReady] = useState(false);
+
+  useEffect(() => {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (reduced.matches) return;
+
+    const lenis = new Lenis({
+      duration: 1.15,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      touchMultiplier: 1.6,
+      wheelMultiplier: 0.9,
+    });
+    lenisRef.current = lenis;
+    setReady(true);
+
+    let frame = 0;
+    const raf = (time: number) => {
+      lenis.raf(time);
+      frame = requestAnimationFrame(raf);
+    };
+    frame = requestAnimationFrame(raf);
+
+    return () => {
+      cancelAnimationFrame(frame);
+      lenis.destroy();
+      lenisRef.current = null;
+    };
+  }, []);
+
+  // In-page anchors: eased when Lenis is live, native otherwise.
+  useEffect(() => {
+    const onClick = (event: MouseEvent) => {
+      if (event.defaultPrevented || event.metaKey || event.ctrlKey) return;
+
+      const anchor = (event.target as HTMLElement | null)?.closest?.(
+        'a[href^="#"]',
+      ) as HTMLAnchorElement | null;
+      const hash = anchor?.getAttribute("href");
+      if (!hash || hash === "#") return;
+
+      const target = document.querySelector(hash);
+      if (!target) return;
+
+      const lenis = lenisRef.current;
+      if (!lenis) return; // let the browser handle it (reduced motion)
+
+      event.preventDefault();
+      lenis.scrollTo(target as HTMLElement, { offset: -16 });
+      history.replaceState(null, "", hash);
+    };
+
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
+
+  const value = useMemo<ScrollLock>(
+    () => ({
+      lock: () => {
+        lenisRef.current?.stop();
+        document.documentElement.style.overflow = "hidden";
+      },
+      unlock: () => {
+        lenisRef.current?.start();
+        document.documentElement.style.overflow = "";
+      },
+    }),
+    [],
+  );
+
+  return (
+    <ScrollLockContext.Provider value={value}>
+      {children}
+    </ScrollLockContext.Provider>
+  );
+}
