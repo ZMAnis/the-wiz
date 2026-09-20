@@ -15,6 +15,8 @@ for path in sorted(root.glob('*.pdf')):
         data = document.tobytes(garbage=4, deflate=True)
     with pymupdf.open(stream=data, filetype='pdf') as checked:
         assert len(checked) == pages
-    path.write_bytes(data)
+    temporary = path.with_suffix('.optimized.pdf')
+    temporary.write_bytes(data)
+    temporary.replace(path)
     after += len(data)
 print(f'Preview PDFs: {before / 1e6:.1f} MB -> {after / 1e6:.1f} MB')

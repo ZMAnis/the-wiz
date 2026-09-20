@@ -14,7 +14,7 @@ export const site = {
   name: "The Wiz",
   tagline:
     "The notebooks built to help medical, pharmacy and dental students study smarter.",
-  url: githubPages ? "https://aniszemali.github.io/the-wiz" : "https://thewiz.example.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? (githubPages ? "https://aniszemali.github.io/the-wiz" : "https://thewiz.example.com"),
   email: "hello@thewiz.com",
   instagram: "https://instagram.com/thewiz.notebook",
   tiktok: "https://tiktok.com/@thewiz.notebook",
